@@ -1,10 +1,9 @@
 [AutoProxy 0.2.9]
 @@||bupt.edu.cn
-@@||bupt.edu.cn
 @@||byr.cn
 @@|http://10.
 @@|https://10.
-@@||localhost
+@@||cnki.net
 @@||localhost
 @@||google-public-dns-a.google.com
 @@||google-public-dns-b.google.com
