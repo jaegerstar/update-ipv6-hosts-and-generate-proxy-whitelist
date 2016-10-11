@@ -48,7 +48,6 @@ def getDomain():
         f.write('@@||byr.cn\n')
         f.write('@@|http://10.\n')
         f.write('@@|https://10.\n')
-        f.write('@@||localhost\n')
         for line in lines:
             if line[0] == '#' or len(line) < 2:  # lazy
                 continue
