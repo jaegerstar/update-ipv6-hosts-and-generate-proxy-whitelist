@@ -43,7 +43,7 @@ def getDomain():
     with open(path+file, 'r') as f:
         lines = f.readlines()
     with open('autoproxy-whitelist-for-byr.txt', 'wt') as f:
-        f.write('[AutoProxy 0.2.9]\n')
+        f.write('[switchomega]\n')
         f.write('||bupt.edu.cn\n')
         f.write('||byr.cn\n')
         f.write('|http://10.\n')
