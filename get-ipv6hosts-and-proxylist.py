@@ -44,17 +44,17 @@ def getDomain():
         lines = f.readlines()
     with open('autoproxy-whitelist-for-byr.txt', 'wt') as f:
         f.write('[AutoProxy 0.2.9]\n')
-        f.write('@@||bupt.edu.cn\n')
-        f.write('@@||byr.cn\n')
-        f.write('@@|http://10.\n')
-        f.write('@@|https://10.\n')
+        f.write('||bupt.edu.cn\n')
+        f.write('||byr.cn\n')
+        f.write('|http://10.\n')
+        f.write('|https://10.\n')
         for line in lines:
             if line[0] == '#' or len(line) < 2:  # lazy
                 continue
             line = line.split()
             if '.' in line[0]:
                 continue
-            f.write('@@||'+line[1].strip() + '\n')
+            f.write('||'+line[1].strip() + '\n')
 
 if __name__ == '__main__':
     getDomain()
